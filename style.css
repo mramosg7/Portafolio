@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: grid;
+    place-items: center;
+    background-color:#1f2937;color: #FFF;
+    
+}
+#info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    
+}
+.header-img{
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    
+}
+.header-info{
+    display: flex;
+    flex-direction: column;
+    line-height: 3px;
+}
+main{
+    max-width: 800px;
+    
+}
+
+
+img{
+    transition: all 0.3s ease-in-out;
+}
+img:hover{
+    transform:scale(1.2);
+}
+
+.card{
+    background-color:#1f2937;
+    color: white;    
+}
+
+.btn{
+    background-color: white;
+    color: black;
+    font-weight: 500;
+}
+.btn:hover{
+    background-color: rgb(217, 217, 217);
+    color: black;
+    font-weight: 500;
+}
+
+.card2{
+    width: 386px;
+    border: 2px solid rgba(119, 119, 119, 0.851);
+    transition: all 0.3s ease-in-out;
+   
+}
+.card2:hover{
+    border: solid 2px white;
+    transform: translateY(-10px);
+    cursor:pointer;
+}
+i{
+    font-size: 30px;
+}
+.fa-react{
+    color: #61DAFB;
+}
+
+.fa-js{
+    color:#F7DF1E ;
+}
+.fa-bootstrap{
+    color:#7952B3 ;
+}
+
+.fa-node{
+    color:#8CC84B;
+}
+
+.fa-database{
+    color:#00758F ;
+}
+
+
+.fa-html5{
+    color: #E34F26;
+}
+.fa-css3-alt{
+    color: #1572B6;
+}
