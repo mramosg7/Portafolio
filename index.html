@@ -9,7 +9,7 @@
     <title>Mario Ramos García</title>
 </head>
 <body >
-    <main class=" m-0 p-0">
+    <main class=" my-5 mx-3 p-0">
         <section id="info">
             <div class="header-img rounded-circle" >
                     
@@ -19,7 +19,7 @@
                 <p style="color: #a9b3be;">Soy un desarollador web full stack</p>
                 <div class="buttons d-flex gap-2">
                     <div class="github d-flex align-items-center justify-content-center rounded" style="height: 40px; width: 40px;" data-bs-toggle="tooltip" data-bs-title="Github">
-                        <a href="" class="fa-brands fa-github text-center rounded">
+                        <a href="https://github.com/mramosg7" class="fa-brands fa-github text-center rounded">
                         
                         </a>
                     </div>
@@ -42,7 +42,7 @@
         <hr>
 
         <section id="experiencia">
-            <h2>Educación</h2>
+            <h2 class="mb-3">Educación</h2>
             <div class="experiencia">
                 <h5>Sistemas Microinformáticos y Redes - I.E.S. Azarquiel</h5>
                 <p style="color: #a9b3be;">2020 - 2022</p>
@@ -55,11 +55,11 @@
         <h2>Proyectos</h2>
         <section id="proyectos" class="d-flex flex-column gap-5">
                 <div class="card overflow-hidden">
-                    <div class="row">
-                        <div class="col-auto overflow-hidden rounded" >
+                    <div class="row justify-content-center">
+                        <div class="col-auto overflow-hidden rounded " >
                             <img style="width: 350px; height: 100%;" class="rounded" src="./img/biblioteca.png" alt="biblioteca">
                         </div>
-                        <div class="col p-2">
+                        <div class="col p-4 text-center text-sm-start p-md-2 d-flex d-md-block flex-column align-items-center justify-content-center">
                             <h4>Biblioteca</h4>
                             <p>Esta web te invita a explorar un vasto repertorio de libros hasta el último detalle. </p>
                             <div class="card-lenguajes d-flex gap-3 mb-3">
@@ -68,18 +68,18 @@
                                 <i class="fa-brands fa-bootstrap" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Bootstrap"></i>
                             </div>
                             <div class="card-enlaces d-flex">
-                                <button class="btn me-2">Repositorio</button>
-                                <button class="btn ">Web</button>
+                                <a href="https://github.com/mramosg7/OasisLibrary" class="btn me-2 btn-light text-dark">Repositorio</a>
+                                <a href="https://aquamarine-heliotrope-f762bb.netlify.app" class="btn btn-light text-dark">Web</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card overflow-hidden" >
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <div class="col-auto overflow-hidden rounded" >
                             <img style="width: 350px; height: 100%;" class="rounded" src="./img/API-Tareas.png" alt="api_Tareas">
                         </div>
-                        <div class="col p-2">
+                        <div class="col p-4 text-center text-sm-start p-md-2 d-flex d-md-block flex-column align-items-center justify-content-center">
                             <h4>API Tareas</h4>
                             <p>La API de Tareas, desarrollada en Node.js utilizando el framework Express y respaldada por una base de datos MySQL, ofrece una solución completa para la gestión de tareas pendientes. </p>
                             <div class="card-lenguajes d-flex gap-3 mb-3">
@@ -88,17 +88,17 @@
                                 <i class="fa-solid fa-database" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="MySQL"></i>
                             </div>
                             <div class="card-enlaces d-flex">
-                                <button class="btn me-2">Repositorio</button>
+                                <a href="https://github.com/mramosg7/API-REST-Tareas" class="btn me-2 btn-light text-dark">Repositorio</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card overflow-hidden" >
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <div class="col-auto overflow-hidden rounded" >
                             <img src="./img/API-Usuarios.png" class="rounded" style="width: 350px; height: 100%;" alt="Api-Usuarios">
                         </div>
-                        <div class="col p-2">
+                        <div class="col p-4 text-center text-sm-start p-md-2 d-flex d-md-block flex-column align-items-center justify-content-center">
                             <h4>API Usuarios</h4>
                             <p>Este proyecto se centra en el desarrollo de una API robusta que cumple con estándares RESTful, priorizando la seguridad mediante el uso de JWT. </p>
                             <div class="card-lenguajes d-flex gap-3 mb-3">
@@ -107,12 +107,12 @@
                                 <i class="fa-solid fa-database" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="MySQL"></i>
                             </div>
                             <div class="card-enlaces d-flex">
-                                <button class="btn me-2">Repositorio</button>
+                                <a href="https://github.com/mramosg7/API-REST-Usuarios" class="btn me-2 btn-light text-dark">Repositorio</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex flex-wrap border gap-3 justify-content-center" >
+                <div class="d-flex flex-wrap gap-3 justify-content-center" >
                     <a class="col-auto card2 rounded position-relative d-flex flex-column justify-content-center text-start p-3">
                         
                             <h6>Busca minas</h6>
@@ -164,8 +164,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
-        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>

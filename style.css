@@ -21,6 +21,9 @@ a:visited {
     color: inherit; 
        
 }
+a:active{
+    background-color: red;
+}
 .github{
     font-size:25px;
     background-color: #181717;
@@ -56,7 +59,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     
 }
 .header-img{
@@ -68,14 +71,19 @@ body{
 .header-info{
     display: flex;
     flex-direction: column;
-    line-height: 3px;
+    
 }
 main{
     max-width: 800px;
     
 }
-
-
+.btn{
+    color: black;
+}
+.btnP:active{
+    border: solid 1px red;
+    background-color: rgb(91, 91, 91);
+}
 img{
     transition: all 0.3s ease-in-out;
 }
