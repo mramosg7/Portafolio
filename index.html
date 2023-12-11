@@ -9,7 +9,7 @@
     <title>Mario Ramos García</title>
 </head>
 <body >
-    <main class="border border-5 m-0 p-0">
+    <main class=" m-0 p-0">
         <section id="info">
             <div class="header-img rounded-circle" >
                     
@@ -17,13 +17,24 @@
             <div class="header-info">
                 <h1>Mario Ramos García</h1>
                 <p style="color: #a9b3be;">Soy un desarollador web full stack</p>
-                <div class="buttons">
-                    <button class="btn">
-                        linkedint
-                    </button>
-                    <button class="btn">
-                        curriculum
-                    </button>
+                <div class="buttons d-flex gap-2">
+                    <div class="github d-flex align-items-center justify-content-center rounded" style="height: 40px; width: 40px;" data-bs-toggle="tooltip" data-bs-title="Github">
+                        <a href="" class="fa-brands fa-github text-center rounded">
+                        
+                        </a>
+                    </div>
+                    <div class="link d-flex align-items-center justify-content-center rounded" style="height: 40px; width: 40px;" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Linkedin">
+                        <a href="" class="fa-brands fa-linkedin text-center rounded">
+                        
+                        </a>
+                    </div>
+                    <div class="cur d-flex align-items-center justify-content-center rounded" style="height: 40px; width: 40px;" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Curriculum">
+                        <a href="" class="fa-solid fa-file text-center rounded">
+                        
+                        </a>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -52,9 +63,9 @@
                             <h4>Biblioteca</h4>
                             <p>Esta web te invita a explorar un vasto repertorio de libros hasta el último detalle. </p>
                             <div class="card-lenguajes d-flex gap-3 mb-3">
-                                <i class="fa-brands fa-react" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="React"></i>
-                                <i class="fa-brands fa-js" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="JavaScript"></i>
-                                <i class="fa-brands fa-bootstrap" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="Bootstrap"></i>
+                                <i class="fa-brands fa-react" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="React"></i>
+                                <i class="fa-brands fa-js" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="JavaScript"></i>
+                                <i class="fa-brands fa-bootstrap" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Bootstrap"></i>
                             </div>
                             <div class="card-enlaces d-flex">
                                 <button class="btn me-2">Repositorio</button>
@@ -72,9 +83,9 @@
                             <h4>API Tareas</h4>
                             <p>La API de Tareas, desarrollada en Node.js utilizando el framework Express y respaldada por una base de datos MySQL, ofrece una solución completa para la gestión de tareas pendientes. </p>
                             <div class="card-lenguajes d-flex gap-3 mb-3">
-                                <i class="fab fa-node" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="Node"></i>
-                                <i class="fa-brands fa-js" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="JavaScript"></i>
-                                <i class="fa-solid fa-database" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="MySQL"></i>
+                                <i class="fab fa-node" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Node"></i>
+                                <i class="fa-brands fa-js" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="JavaScript"></i>
+                                <i class="fa-solid fa-database" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="MySQL"></i>
                             </div>
                             <div class="card-enlaces d-flex">
                                 <button class="btn me-2">Repositorio</button>
@@ -91,9 +102,9 @@
                             <h4>API Usuarios</h4>
                             <p>Este proyecto se centra en el desarrollo de una API robusta que cumple con estándares RESTful, priorizando la seguridad mediante el uso de JWT. </p>
                             <div class="card-lenguajes d-flex gap-3 mb-3">
-                                <i class="fab fa-node" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="Node"></i>
-                                <i class="fa-brands fa-js" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="JavaScript"></i>
-                                <i class="fa-solid fa-database" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="MySQL"></i>
+                                <i class="fab fa-node" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Node"></i>
+                                <i class="fa-brands fa-js" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="JavaScript"></i>
+                                <i class="fa-solid fa-database" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="MySQL"></i>
                             </div>
                             <div class="card-enlaces d-flex">
                                 <button class="btn me-2">Repositorio</button>
@@ -102,45 +113,49 @@
                     </div>
                 </div>
                 <div class="d-flex flex-wrap border gap-3 justify-content-center" >
-                    <div class="col-auto card2 rounded  d-flex flex-column justify-content-center text-start p-3">
+                    <a class="col-auto card2 rounded position-relative d-flex flex-column justify-content-center text-start p-3">
                         
                             <h6>Busca minas</h6>
                             <p class="m-0">Recreación del típico juego de buscaminas.</p>
                             <div class="card-lenguajes d-flex gap-3 mt-2">
-                                <i class="fa-brands fa-html5" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="HTML"></i>
-                                <i class="fa-brands fa-css3-alt" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="CSS"></i>
-                                <i class="fa-brands fa-js" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="JavaScript"></i>
+                                <i class="fa-brands fa-html5" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="HTML"></i>
+                                <i class="fa-brands fa-css3-alt" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="CSS"></i>
+                                <i class="fa-brands fa-js" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="JavaScript"></i>
                             </div>
+                            <i class="fa-solid fa-share position-absolute top-0 end-0 m-2 share"></i>
                         
                        
-                    </div>
-                    <div class="col-auto card2 rounded  d-flex flex-column justify-content-center text-start p-3">
+                    </a>
+                    <a class="col-auto card2 rounded  d-flex flex-column justify-content-center text-start p-3">
                         <h6>API RRSS</h6>
                         <p class="m-0">Api funcional para redes sociales.</p>
                         <div class="card-lenguajes d-flex gap-3 mt-2">
-                            <i class="fab fa-node" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="Node"></i>
-                            <i class="fa-brands fa-js" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="JavaScript"></i>
-                            <i class="fa-solid fa-database" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="MySQL"></i>
+                            <i class="fab fa-node" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Node"></i>
+                            <i class="fa-brands fa-js" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="JavaScript"></i>
+                            <i class="fa-solid fa-database" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="MySQL"></i>
                         </div>
-                    </div>
-                    <div class="col-auto card2 rounded  d-flex flex-column justify-content-center text-start p-3">
+                        <i class="fa-solid fa-share position-absolute top-0 end-0 m-2 share"></i>
+                    </a>
+                    <a class="col-auto card2 rounded  d-flex flex-column justify-content-center text-start p-3">
                         <h6>API Blog</h6>
                         <p class="m-0">Api funcional para un blog.</p>
                         <div class="card-lenguajes d-flex gap-3 mt-2">
-                            <i class="fab fa-node" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="Node"></i>
-                                <i class="fa-brands fa-js" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="JavaScript"></i>
-                                <i class="fa-solid fa-database" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="MySQL"></i>
+                            <i class="fab fa-node" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Node"></i>
+                                <i class="fa-brands fa-js" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="JavaScript"></i>
+                                <i class="fa-solid fa-database" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="MySQL"></i>
                         </div>
-                    </div>
-                    <div class="col-auto card2 rounded  d-flex flex-column justify-content-center text-start p-3">
+                        <i class="fa-solid fa-share position-absolute top-0 end-0 m-2 share"></i>
+                    </a>
+                    <a href="https://github.com/mramosg7/Trivial-app" class="col-auto card2 rounded  d-flex flex-column justify-content-center text-start p-3">
                         <h6>Trivial</h6>
                         <p class="m-0">El juego de trivial consumiendo una api.</p>
                         <div class="card-lenguajes d-flex gap-3 mt-2">
-                            <i class="fa-brands fa-html5" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="HTML"></i>
-                            <i class="fa-brands fa-css3-alt" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="CSS"></i>
-                            <i class="fa-brands fa-js" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="JavaScript"></i>
+                            <i class="fa-brands fa-html5" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="HTML"></i>
+                            <i class="fa-brands fa-css3-alt" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="CSS"></i>
+                            <i class="fa-brands fa-js" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="JavaScript"></i>
                         </div>
-                    </div>
+                        <i class="fa-solid fa-share position-absolute top-0 end-0 m-2 share"></i>
+                    </a>
                 </div>
         </section>
 
@@ -150,7 +165,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
         const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))</script>
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
     <script src="https://kit.fontawesome.com/a6a69a0011.js" crossorigin="anonymous"></script>
 </body>
 </html>

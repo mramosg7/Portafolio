@@ -4,7 +4,48 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    text-decoration: none;
+    color: inherit; 
+    border: none;
+}
+a:hover{
+    
+    cursor:pointer;
+    color: inherit; 
+    
+}
+a:visited {
+    text-decoration: none; 
+    color: inherit; 
+       
+}
+.github{
+    font-size:25px;
+    background-color: #181717;
+    border: solid 2px #000000;
+}
+.github:hover{
+    background-color: #000000;
+}
+.link{
+    font-size:25px;
+    background-color: #0077B5;
+    border: solid 2px #0A66C2;
+}
+.link:hover{
+    background-color: #0A66C2;
+}
+.cur{
+    font-size: 25px;
+    background-color: #9370DB;
+    border: solid 2px #6A5ACD;
 
+}
+.cur:hover{
+    background-color: #6A5ACD;
+}
 body{
     display: grid;
     place-items: center;
@@ -62,12 +103,21 @@ img:hover{
     width: 386px;
     border: 2px solid rgba(119, 119, 119, 0.851);
     transition: all 0.3s ease-in-out;
-   
+    
+       
 }
+.card2:visited {
+    text-decoration: none; 
+    color: inherit; 
+       
+}
+
 .card2:hover{
     border: solid 2px white;
     transform: translateY(-10px);
     cursor:pointer;
+    color: inherit; 
+    box-shadow: none;
 }
 i{
     font-size: 30px;
@@ -97,4 +147,15 @@ i{
 }
 .fa-css3-alt{
     color: #1572B6;
+}
+
+.share {
+    transform: scale(0);
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.card2:hover .share {
+    transform: scale(1);
 }
