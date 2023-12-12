@@ -165,3 +165,30 @@ i{
 .card2:hover .share {
     transform: scale(1);
 }
+
+.btn-custom{
+    background-color:#7952B3  ;
+    border: #48306d 2px solid ;
+    color: white;
+}
+
+.btn-custom:hover{
+    background-color:#48306d ;
+    color: white;
+}
+
+.gmail{
+    background-color:#d93025;
+    border: 2px solid #b0241c;
+    color: white;
+    
+   
+}
+.gmail .fa-envelope{
+    font-size: 25px;
+}
+
+.gmail:hover{
+    background-color:#b0241c ;
+    color: white;
+}

@@ -16,7 +16,7 @@
             </div>
             <div class="header-info">
                 <h1>Mario Ramos García</h1>
-                <p style="color: #a9b3be;">Soy un desarollador web full stack</p>
+                <p style="color: #a9b3be;">Soy un desarollador web full stack  -  marioramos.cobisa@gmail.com</p>
                 <div class="buttons d-flex gap-2">
                     <div class="github d-flex align-items-center justify-content-center rounded" style="height: 40px; width: 40px;" data-bs-toggle="tooltip" data-bs-title="Github">
                         <a href="https://github.com/mramosg7" class="fa-brands fa-github text-center rounded">
@@ -33,6 +33,12 @@
                         
                         </a>
                     </div>
+
+                    <div class="gmail d-flex align-items-center justify-content-center rounded" style="height: 40px; width: 40px;" onclick="copiarValor(event)" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Copiar email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+          
+                    
                     
                     
                 </div>
@@ -52,7 +58,7 @@
                 <p style="color: #a9b3be;">2022 - 2024</p>
             </div>
         </section>
-        <h2>Proyectos</h2>
+        <h2 class="mb-4">Proyectos</h2>
         <section id="proyectos" class="d-flex flex-column gap-5">
                 <div class="card overflow-hidden">
                     <div class="row justify-content-center">
@@ -158,14 +164,22 @@
                     </a>
                 </div>
         </section>
-        <section id="email">
-            <h2>Email</h2>
-            <form>
+        <section id="email" >
+            <h2 class="my-3">Email</h2>
+            <form >
                 <div class="input-group">
-                    <input type="text" class="form-control" value="marioramos.cobisa@gmail.com" aria-label="Username" aria-describedby="basic-addon1" disabled>
-                    <a href="btn btn-light">Enviar</a>
-                    <button>Copiar</button>
+                    <input type="text" class="form-control"  id="emailI" value="marioramos.cobisa@gmail.com" aria-label="Username" aria-describedby="basic-addon1" disabled>
+                    <i class="fa-solid fa-copy btn gmail text-center d-flex align-items-center" onclick="copiarValor(event)" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Copiar email"></i>    
+                    
                 </div>
+            
+                    
+                
+                <input type="text" id="asunto" class="form-control my-3" placeholder="Asunto...">
+                <textarea name="cuerpo" class="form-control" id="cuerpo" cols="10" rows="8" placeholder="Cuerpo..."></textarea>
+
+                <button class="btn btn-custom py-2 mt-3" type="success" href="btn btn-light">Enviar</button>
+                
             </form>
         </section>
     </main>
@@ -175,6 +189,42 @@
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        
+        const form = document.querySelector('form')
+
+        form.addEventListener('submit', (e)=>{
+            e.preventDefault()
+            const cuerpoI = document.getElementById('cuerpo')
+            const asuntoI = document.getElementById('asunto')
+
+            const destinatario = "marioramos.cobisa@gmail.com";
+
+           
+            const asunto = asuntoI.value;
+            const cuerpo = cuerpoI.value;
+
+            const enlaceCorreo = "mailto:" + destinatario + "?subject=" + encodeURIComponent(asunto) + "&body=" + encodeURIComponent(cuerpo);
+
+            window.location.href = enlaceCorreo;
+        })
+       
+        function copiarValor(e) {
+            console.log(e.target)
+            console.log( e.target.getAttribute('data-bs-title'))
+            const inputElemento = document.getElementById("emailI");
+
+            navigator.clipboard.writeText(inputElemento.value)
+
+            
+            const tooltip = bootstrap.Tooltip.getInstance(e.target);
+            console.log(tooltip._config.title)
+            tooltip.setContent({ '.tooltip-inner': 'Copiado' })
+            
+           setTimeout(()=>{
+            tooltip.setContent({ '.tooltip-inner': 'Copiar email' })
+           }, 5000)
+            console.log( e.target.getAttribute('data-bs-title'))
+        }
     </script>
     <script src="https://kit.fontawesome.com/a6a69a0011.js" crossorigin="anonymous"></script>
 </body>
