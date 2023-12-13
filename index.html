@@ -11,8 +11,8 @@
 <body >
     <main class=" my-5 mx-3 p-0">
         <section id="info">
-            <div class="header-img rounded-circle" >
-                    
+            <div class="header-img" >
+                    <img src="./img/_95646229-e9d3-4a12-82ac-2906547f429b.jpg" style="width: 150px; height: 150px;" alt="avatar">
             </div>
             <div class="header-info">
                 <h1>Mario Ramos García</h1>
@@ -35,7 +35,7 @@
                     </div>
 
                     <div class="gmail d-flex align-items-center justify-content-center rounded" style="height: 40px; width: 40px;" onclick="copiarValor(event)" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Copiar email">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-envelope icon"></i>
                     </div>
           
                     
@@ -209,21 +209,21 @@
         })
        
         function copiarValor(e) {
-            console.log(e.target)
-            console.log( e.target.getAttribute('data-bs-title'))
+            
           
-
+            const target = e.target.classList.contains("icon") ? e.target.parentNode : e.target 
+           
             navigator.clipboard.writeText("marioramos.cobisa@gmail.com")
 
             
-            const tooltip = bootstrap.Tooltip.getInstance(e.target);
-            console.log(tooltip._config.title)
+            const tooltip = bootstrap.Tooltip.getInstance(target);
+           
             tooltip.setContent({ '.tooltip-inner': 'Copiado' })
             
            setTimeout(()=>{
             tooltip.setContent({ '.tooltip-inner': 'Copiar email' })
            }, 5000)
-            console.log( e.target.getAttribute('data-bs-title'))
+           
         }
     </script>
     <script src="https://kit.fontawesome.com/a6a69a0011.js" crossorigin="anonymous"></script>
